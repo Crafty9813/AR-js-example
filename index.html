@@ -2,6 +2,7 @@
 <html>
   <head>
     <link rel="stylesheet" href="style.css" />
+    <!--Import aframe-->
     <script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script>
 
     <!-- Import AR.JS version w/o NFT but with marker + location based support -->
@@ -15,8 +16,9 @@
         <a-entity
           position="0 0 0"
           rotation="0 0 0"
-          scale="0.7 0.7 0.7"
-          gltf-model="../models/bedroom/bedroom.glb"
+          scale="4 4 4"
+          gltf-model="../models/animals/duck.glb"
+          animation="property: rotation; to: 0 360 0; loop: true; dur: 3000"
         ></a-entity>
       </a-marker>
       <a-entity camera></a-entity>
