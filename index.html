@@ -20,6 +20,18 @@
           gltf-model="../models/animals/duck.glb"
           animation="property: rotation; to: 0 360 0; loop: true; dur: 3000"
         ></a-entity>
+
+        <!-- Supposedly the models themselves may have embedded animations? -->
+        <!-- Another animation method -->
+        <a-animation
+          attribute="rotation"
+          dur="2000"
+          fill="forwards"
+          to="0 360 0"
+          repeat="indefinite"
+          easing="linear"
+        >
+        </a-animation>
       </a-marker>
       <a-entity camera></a-entity>
     </a-scene>
